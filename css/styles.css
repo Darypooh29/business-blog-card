@@ -1,0 +1,93 @@
+:root {
+  --background: #f2f5f9;
+  --business-blog-card-background: #ffffff;
+  --business-blog-card-title: #111729;
+  --business-blog-card-text: #677489;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  font-family: "Lato", sans-serif;
+  font-size: 0.875rem;
+}
+
+.business-blog-card {
+  background: var(--business-blog-card-background);
+  width: 425px;
+  margin: 25% auto;
+  border-radius: 1rem;
+}
+
+.business-blog-card .card-title {
+  color: var(--business-blog-card-title);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.business-blog-card .business-img-container {
+  position: relative;
+}
+
+.business-blog-card .business-img-container img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.business-blog-card .business-img-container .white-overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.business-blog-card .manager-info-container {
+  display: flex;
+}
+
+.card-content .business-info {
+  padding: 0.5rem 2rem;
+}
+
+.card-content .card-description {
+  color: var(--business-blog-card-text);
+  font-size: 1.05rem;
+  margin: 20px 0;
+  line-height: 1.5rem;
+}
+
+/* Manager info*/
+.manager-info-container {
+  padding: 1.5rem 2rem;
+  border-top: 1px solid var(--background);
+  gap: 1rem;
+}
+
+.manager-info-container .profile-img-container {
+  background-color: var(--background);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+}
+
+.manager-info-container .profile-img-container img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.manager-info-container .person-info h2 {
+  font-size: 1.1rem;
+}
+
+.manager-info-container .person-info p {
+  font-size: 0.875rem;
+  color: var(--business-blog-card-text);
+}
